@@ -64,7 +64,7 @@
 <body>
 
   <header>
-    <h1>KKDevOps & Cloud Technologies</h1>
+    <h1>KKDevOps & Cloud Technologies & AI</h1>
     <p>Empowering DevOps through automation and cloud</p>
   </header>
 
