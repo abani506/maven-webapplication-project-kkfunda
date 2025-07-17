@@ -4,49 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KKDevOps & Cloud Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle at top left, #1f1c2c, #928DAB);
+      color: #f0f0f0;
       text-align: center;
     }
 
     header {
-      padding: 60px 20px 20px;
+      padding: 80px 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.2em;
+      margin: 0 0 15px;
+      color: #00d9ff;
+      text-shadow: 0 0 10px #00d9ff77;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 10px #00d9ff77; }
+      50% { text-shadow: 0 0 20px #00d9ff; }
+      100% { text-shadow: 0 0 10px #00d9ff77; }
     }
 
     p {
       font-size: 1.2em;
-      color: #ddd;
+      color: #dcdcdc;
     }
 
     .logo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 25px;
+      padding: 50px 20px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
     .logo {
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(6px);
     }
 
     .logo:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 217, 255, 0.3);
     }
 
     .logo img {
@@ -55,17 +69,17 @@
     }
 
     footer {
-      margin: 40px 0;
+      margin: 40px 0 20px;
       font-size: 0.9em;
-      color: #bbb;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>KKDevOps & Cloud Technologies & AI Technologies..!!</h1>
-    <p>Empowering DevOps through automation and cloud</p>
+    <h1>KKDevOps & Cloud & AI Technologies</h1>
+    <p>Empowering DevOps through Automation, Cloud, and AI</p>
   </header>
 
   <div class="logo-grid">
@@ -81,7 +95,7 @@
   </div>
 
   <footer>
-    &copy; 2025 KKDevOps | Built with 💙 DevOps & Cloud
+    &copy; 2025 KKDevOps | Built with 💙 DevOps, Cloud & AI
   </footer>
 
 </body>
