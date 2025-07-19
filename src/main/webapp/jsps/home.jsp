@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KKDevOps & Cloud & AI Technologies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devops/devops-original.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devops/devops-original.svg" type="image/svg+xml" />
   <style>
     body {
       margin: 0;
+      overflow-x: hidden;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background: radial-gradient(ellipse at bottom, #0d0d1a 0%, #000000 100%);
       color: #f0f0f0;
       text-align: center;
+      position: relative;
+    }
+
+    /* 🌌 Background Stars */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://i.imgur.com/wua7MCy.png") repeat;
+      z-index: -2;
+      opacity: 0.3;
+      animation: moveStars 100s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 10000px; }
+    }
+
+    /* 🚀 Rockets */
+    .rocket {
+      position: absolute;
+      width: 60px;
+      animation: fly 25s linear infinite;
+      z-index: -1;
+    }
+
+    .rocket:nth-child(1) {
+      top: 40%;
+      left: -80px;
+      animation-delay: 0s;
+    }
+
+    .rocket:nth-child(2) {
+      top: 10%;
+      left: -100px;
+      width: 50px;
+      animation-delay: 5s;
+    }
+
+    .rocket:nth-child(3) {
+      top: 70%;
+      left: -90px;
+      width: 40px;
+      animation-delay: 10s;
+    }
+
+    @keyframes fly {
+      0% { transform: translateX(0) rotate(10deg); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateX(140vw) rotate(30deg); opacity: 0; }
     }
 
     header {
@@ -91,6 +146,11 @@
 </head>
 <body>
 
+  <!-- 🚀 Animated Rockets -->
+  <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
+
   <header>
     <h1>KKDevOps & Cloud & AI Technologies</h1>
     <p>Empowering DevOps through Automation, Cloud, and Artificial Intelligence</p>
@@ -122,6 +182,5 @@
   <footer>
     &copy; 2025 KKDevOps | Built with 💙 DevOps, Cloud & AI
   </footer>
-
 </body>
 </html>
