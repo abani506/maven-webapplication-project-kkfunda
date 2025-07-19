@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KKDevOps & Cloud & AI Technologies..!</title>
+  <title>KKDevOps & Cloud & AI Technologies.!</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet" />
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devops/devops-original.svg" type="image/svg+xml" />
   <style>
