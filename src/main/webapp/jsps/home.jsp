@@ -26,7 +26,7 @@
       width: 100%;
       height: 100%;
       background: url("https://i.imgur.com/wua7MCy.png") repeat;
-      z-index: -2;
+      z-index: -3;
       opacity: 0.3;
       animation: moveStars 100s linear infinite;
     }
@@ -41,33 +41,49 @@
       position: absolute;
       width: 60px;
       animation: fly 25s linear infinite;
-      z-index: -1;
+      z-index: -2;
     }
 
-    .rocket:nth-child(1) {
-      top: 40%;
-      left: -80px;
-      animation-delay: 0s;
-    }
-
-    .rocket:nth-child(2) {
-      top: 10%;
-      left: -100px;
-      width: 50px;
-      animation-delay: 5s;
-    }
-
-    .rocket:nth-child(3) {
-      top: 70%;
-      left: -90px;
-      width: 40px;
-      animation-delay: 10s;
-    }
+    .rocket:nth-child(1) { top: 40%; left: -80px; animation-delay: 0s; }
+    .rocket:nth-child(2) { top: 10%; left: -100px; width: 50px; animation-delay: 5s; }
+    .rocket:nth-child(3) { top: 70%; left: -90px; width: 40px; animation-delay: 10s; }
 
     @keyframes fly {
       0% { transform: translateX(0) rotate(10deg); opacity: 0; }
       10% { opacity: 1; }
       100% { transform: translateX(140vw) rotate(30deg); opacity: 0; }
+    }
+
+    /* 🔗 Floating Company Logos */
+    .floating-companies {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      pointer-events: none;
+      transform: translateY(-50%);
+      opacity: 0.06;
+    }
+
+    .floating-companies a {
+      pointer-events: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .floating-companies img {
+      height: 60px;
+      opacity: 0.5;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .floating-companies a:hover img {
+      transform: scale(1.3);
+      opacity: 1;
+      z-index: 10;
     }
 
     header {
@@ -150,6 +166,15 @@
   <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
   <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
   <img src="https://cdn-icons-png.flaticon.com/512/3211/3211754.png" class="rocket" alt="rocket" />
+
+  <!-- 🌐 Floating Company Logos -->
+  <div class="floating-companies">
+    <a href="https://www.google.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" /></a>
+    <a href="https://www.microsoft.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" /></a>
+    <a href="https://www.amazon.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" /></a>
+    <a href="https://www.ibm.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" /></a>
+    <a href="https://www.oracle.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle" /></a>
+  </div>
 
   <header>
     <h1>KKDevOps & Cloud & AI Technologies</h1>
